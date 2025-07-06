@@ -1,0 +1,1 @@
+"Read Me" file is instructions on how to run the program. I wasn't able to upload everything needed to run the program, so this repo is just for looking at my old code. I believe the classes that were written by me were Csv, DiscordBot, SID, SMS, SheetsQuickstart, and TimeData, with small changes to Main.
