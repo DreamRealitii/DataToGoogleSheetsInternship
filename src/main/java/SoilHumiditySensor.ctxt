@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=upperBound\ lowerBound\ types\ typesName\ pin\ adcChannel
+comment0.target=SoilHumiditySensor(float,\ float,\ int[],\ java.lang.String[],\ int,\ int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Sensor\n\ also\ calibrates\ the\ sensor\n
+comment1.params=type
+comment1.target=float\ readData(int)
+comment1.text=\n\ x\ \=\ 1000\ to\ 500\n\ x\ -\ 500\ \=\ 500\ to\ 0\n\ ((500\ -\ (x\ -\ 500))\ *\ 100)\ /\ 500\ (when\ x\=500\ return\ 100,\ when\ x\=1000\ return\ 0)\n\ (((dryReading\ -\ wetReading)\ -\ (x\ -\ wetReading))\ *\ 100)\ /\ (dryReading\ -\ wetReading)\ (when\ x<\=wetReading\ return\ 100,\ when\ x>\=dryReading\ return\ 0)\n\ @param\ type\ (AtoD\ Converter\ channel)\n\ @return\ %soil\ humidity\n
+comment2.params=type
+comment2.target=float\ readDataWithExceptions(int)
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=channel
+comment4.target=int\ getConversionValue(short)
+comment4.text=\n\ Communicate\ to\ the\ ADC\ chip\ via\ SPI\ to\ get\ single-ended\ conversion\ value\ for\ a\ specified\ channel.\n\ @param\ channel\ analog\ input\ channel\ on\ ADC\ chip\n\ @return\ conversion\ value\ for\ specified\ analog\ input\ channel\n\ @throws\ IOException\n
+numComments=5

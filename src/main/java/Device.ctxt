@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=sensorControlled\ controller\ sensorDataType\ criticalPoint\ takeActionUp\ upperActionBound\ takeActionLow\ lowerActionBound\ pin\ gpio\ timeControl\ times\ onFor\ notifyMode\ intervalCounter\ warningCounter
+comment0.target=Device(boolean,\ Sensor,\ int,\ float,\ boolean,\ float,\ boolean,\ float,\ int,\ com.pi4j.io.gpio.GpioController,\ boolean,\ java.lang.String[],\ java.lang.String,\ java.lang.String,\ int,\ int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Device\n
+comment1.params=
+comment1.target=int\ needsAction()
+comment1.text=\n\ -1\ means\ power\ or\ time\ controlled\n\ 0\ means\ no\ action\ required;\n\ 1\ means\ that\ upper\ bound\ was\ reached\ and\ needs\ action\n\ 2\ means\ that\ lower\ bound\ was\ reached\ and\ needs\ action\n\ 3\ means\ that\ it\ is\ close\ enough\ to\ the\ critical\ point\ to\ turn\ off\n
+comment2.params=
+comment2.target=boolean\ count()
+comment3.params=
+comment3.target=boolean\ deviceState()
+comment4.params=
+comment4.target=void\ turnOn()
+comment5.params=
+comment5.target=void\ turnOff()
+comment6.params=
+comment6.target=float\ getNewCurrentDataPoint()
+numComments=7
