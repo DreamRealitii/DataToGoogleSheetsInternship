@@ -1,0 +1,49 @@
+What this program does:
+-Measures sensors.
+-Activates devices in response to measured data.
+-Puts data in SensorData.csv file.
+-Exports data online into a Google Spreadsheet.
+-Writes a log file of events.
+-Sends notifications through Discord (Optional, see instructions below).
+-Sends notifications through text (Optional/costs money, see instructions below).
+
+
+What you can do with the spreadsheet:
+1. Filter the data:
+	a. Go to the "Time Data" sheet (see bottom left), go to "Data", then "Filter views...".
+	b. Pick one of the filters I made, or pick "Create new filter view".
+	Note. You can only use one filter view at a time. To filter more precisely, go to the pivot table.
+
+2. View a graph of the data:
+	a. Go to the "Main Graph" sheet. There it is. It's a line graph.
+	b. The graph updates automatically to any filters applied.
+
+3. Use the data table:
+	a. Go to the "Data Table" sheet. Using the +/- buttons, you can view data from an entire year, down to a certain hour.
+	b. If you click on it, the "Pivot table editor" should open.
+	c. Here, you can drag to change the order of the different time categories, switch them between row/column, and add/delete them.
+	Note. "STD" stands for Standard Deviation, a measure of variance from the average.
+
+4. Create your own graph using the data table:
+	Example. Graph the average of the entire first column of data over the seven days of the week.
+	a. Move the "Day of Week" category into the columns section, and all the other time categories into the rows section.
+	b. Go down to the bottom "Grand Total" section, select the cells labeled "Avg of [data 1]".
+	c. While it's selected, go to the top, click "Insert", then click "Chart". Do whatever you want with the chart.
+	d. To graph different data over a different type of time, change the quoted parts of steps a & b.
+
+
+Note for using the config file: The Discord/text notifications are optional.
+If you don't want to use them, put a space where you would normally put in the required information.
+
+Setting up Discord notifications:
+1. Create a Discord account if you don't have one.
+2. Create a Discord server.
+3. Add the bot to it by going to this link: https://discordapp.com/oauth2/authorize?client_id=534861471637700639&scope=bot&permissions=8
+4. Get the server ID (Can't do this part on mobile, use Discord on a computer):
+	a. Right click the server's icon on the left side of the Discord window.
+	b. Select "Server Settings" -> "Widgets" -> "Server ID" and get the server ID.
+	c. Put the server ID into the config file. (Example: '13778242316320768').
+
+Setting up text notifications:
+1. Create a Twilio account.
+2. Type this information into the config file: Account SID, Auth Token, Active Phone Number (+15942305840), and your own phone number.
